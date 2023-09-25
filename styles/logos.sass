@@ -1,0 +1,248 @@
+@import "base.sass"
+.logos-section
+  @include flex-row
+  max-width: 1440px
+  height: 296px
+  padding: 52px
+  background: $white
+  position: relative
+
+.list-logos
+  @include flex-row
+  width: 1336px
+  height: 192px
+  margin: 0
+  padding-left: 210px
+  padding-right: 210px
+  border-top: 1px solid $gray-light-over
+  border-bottom: 1px solid $gray-light-over
+
+.buttons-container
+  @include container-buttons-l-r
+
+.img__btn
+  @extend %icons-28px
+
+.list-logos-two,
+.list-logos-three,
+.logos-section-three,
+.logos-section-two,
+.nav__slider
+  display: none
+
+@media (max-width: 1460px)
+  .nav__slider
+    display: none
+  .list-logos
+    @include flex-row
+    width: 1336px
+    height: 192px
+    margin: 0
+    padding-left: 210px
+    padding-right: 210px
+    border-top: 1px solid $gray-light-over
+    border-bottom: 1px solid $gray-light-over
+  .list-logos-two,
+  .list-logos-three,
+  .logos-section-three,
+  .logos-section-two
+    display: none
+  .buttons-container
+    width: 100%
+    left: 0
+    padding: 0 52px
+
+@media (max-width: 1380px)
+  .list-logos,
+  .list-logos-three,
+  .logos-section-three,
+  .logos-section-two,
+  .nav__slider
+    display: none
+  .buttons-container
+    width: 100%
+    left: 0
+    padding: 0 52px
+  .list-logos-two
+    @include flex-row
+    width: 1336px
+    height: 192px
+    margin: 0
+    padding-left: 210px
+    padding-right: 210px
+    border-top: 1px solid $gray-light-over
+    border-bottom: 1px solid $gray-light-over
+
+@media (max-width: 1210px)
+  .list-logos,
+  .list-logos-two,
+  .logos-section-three,
+  .logos-section-two,
+  .nav__slider
+    display: none
+  .list-logos-three
+    @include flex-row
+    width: 1336px
+    height: 192px
+    margin: 0
+    padding-left: 210px
+    padding-right: 210px
+    border-top: 1px solid $gray-light-over
+    border-bottom: 1px solid $gray-light-over
+
+@media (max-width: 1085px)
+  .list-logos,
+  .list-logos-two,
+  .list-logos-three,
+  .logos-section-three,
+  .logos-section-three__slider
+    display: none
+  .logos-section-two
+    padding: 40px 40px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    align-items: center
+    margin: 0 16px
+    justify-content: center
+    gap: 80px
+    width: 100%
+  .logos__img-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 55px
+  .buttons-container
+    display: none
+  .logos-section
+    padding-bottom: 0
+    height: auto
+    display: flex
+    justify-content: center
+  .logos-section-two
+    padding-top: 0
+  .logos-section-two__slider
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-bottom: 40px
+  .nav__slider
+    display: flex
+    flex-direction: column
+    align-items: center
+  .slider-dots
+    display: flex
+    align-items: center
+    gap: 25px
+  .slider-dots-container > input
+    visibility: hidden
+    position: absolute
+  .slider-dots-container > input + img
+    cursor: pointer
+    border: 2px solid transparent
+  .slider-dots-container > input:checked + img
+    cursor: pointer
+    border: 2px solid transparent
+
+@media (max-width: 761px)
+  .logos-section
+    display: flex
+    justify-content: center
+    padding-top: 0
+    padding-bottom: 0
+    height: auto
+  .logos-section-three__slider
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-bottom: 40px
+  .list-logos,
+  .list-logos-two,
+  .list-logos-three,
+  .logos-section-two,
+  .logos-section-two__slider
+    display: none
+  .logos-section-three
+    padding: 40px 40px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    margin: 0 16px
+    justify-content: center
+    gap: 40px
+    width: 100%
+  .logos__img-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 55px
+  .nav__slider
+    display: flex
+    flex-direction: column
+    align-items: center
+  .slider-dots
+    display: flex
+    align-items: center
+    gap: 20px
+  .slider-dots-container > input
+    visibility: hidden
+    position: absolute
+  .slider-dots-container > input + img
+    cursor: pointer
+    border: 2px solid transparent
+  .slider-dots-container > input:checked + img
+    cursor: pointer
+    border: 2px solid transparent
+
+@media (max-width: 560px)
+  .logos-section
+    display: flex
+    padding-left: 16px
+    padding-right: 16px
+  .list-logos,
+  .list-logos-two,
+  .list-logos-three,
+  .logos-section-two
+    display: none
+  .logos-section-three
+    padding: 40px 0
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    margin: 0 16px
+    justify-content: center
+    gap: 40px
+    width: 100%
+  .logos__img-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 55px
+  .nav__slider
+    display: flex
+    flex-direction: column
+    align-items: center
+  .slider-dots
+    display: flex
+    align-items: center
+    gap: 15px
+  .slider-dots-container > input
+    visibility: hidden
+    position: absolute
+  .slider-dots-container > input + img
+    cursor: pointer
+    border: 2px solid transparent
+  .slider-dots-container > input:checked + img
+    cursor: pointer
+    border: 2px solid transparent
+
+@media (max-width: 430px)
+  .slider-dots
+    gap: 10px
+
+  
+

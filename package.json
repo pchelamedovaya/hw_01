@@ -1,0 +1,14 @@
+{
+  "name": "hw01a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch styles/index.sass:styles/css/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.67.0"
+  }
+}

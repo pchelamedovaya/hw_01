@@ -1,0 +1,112 @@
+@import "base.sass"
+header
+  @include flex-row
+  max-width: 1440px
+  height: 68px
+  padding: 16px 52px
+  nav
+    @include flex-row
+    width: 1336px
+    height: 36px
+
+.header__content
+  @include flex-row
+  gap: 40px
+  padding: 0
+  li
+    @include text-button-xs
+
+.header-button
+  padding: 0
+  background: none
+  cursor: pointer
+  &__text
+    font-size: 14px
+    font-style: normal
+    font-weight: 600
+    line-height: 24px
+    &::after
+      @extend %icons-18px
+      content: ""
+      position: absolute
+      background-image: url("/images/chevron-down.svg")
+      margin-top: 4px
+      margin-left: 1px
+
+.list-icons
+  @include flex-row
+  gap: 20px
+  padding: 0
+
+.logo
+  width: 119px
+  height: 36px
+
+.content__img
+  @extend %icons-28px
+  line-height: 0
+
+.header__menu-m,
+.header__menu-mobile-container
+  display: none
+
+@media (max-width: 860px)
+  .header
+    display: none
+  header
+    @include flex-row
+    .header__menu-m
+      @include flex-row
+  .list-m-icons
+    @include flex-row
+    padding: 0
+  .header__menu-btn
+    padding: 0
+    cursor: pointer
+    background: none
+    //margin-left: 36px
+    span
+      @include menu-brg-span
+    .span-first
+      margin-bottom: 11px
+  li:not(:last-child)
+    margin-right: 36px
+
+@media (max-width: 660px)
+  li:not(:last-child)
+    margin-right: 22px
+
+@media (max-width: 550px)
+  header .header__menu-m
+    display: none
+  header
+    @include flex-row
+    .header__menu-mobile-container
+      @include flex-row
+  .header-mobile__container
+    @include flex-row
+  .header__menu-mobile
+    padding: 0
+    cursor: pointer
+    background: none
+    span
+      @include menu-brg-span
+    .span-first
+      margin-bottom: 11px
+  .content__img
+    margin-right: 16px
+
+@media (max-width: 455px)
+  header
+    @include flex-row
+    padding: 8px 16px
+
+@media (max-width: 375px)
+  header
+    @include flex-row
+    padding: 8px 16px
+
+
+
+
+

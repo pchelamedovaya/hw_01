@@ -1,0 +1,202 @@
+@import "base.sass"
+footer
+  max-width: 1440px
+  //height: 381px
+  padding: 72px 52px 32px 52px
+
+.footer-one
+  padding-bottom: 72px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  border-bottom: 1px solid $gray-light-over
+  ul
+    @include flex-row
+    width: 192px
+    height: 36px
+    gap: 16px
+    padding: 0
+    margin: 0
+    li
+      background: $white
+      border-radius: 100%
+      padding: 9px
+      line-height: 0
+
+.footer__logo
+  padding-bottom: 16px
+
+.footer-content__first
+  display: flex
+  flex-direction: column
+  width: 310px
+
+.social__img
+  width: 18px
+  height: 18px
+
+.footer-content__text
+  @include text-16px-reg
+  padding-bottom: 24px
+  color: $gray-text
+
+.footer-content__second
+  @include flex-row
+  gap: 120px
+
+.content__col-text
+  @include text-button-xs
+  padding-bottom: 16px
+  &--light
+    @include text-14px-reg
+    color: $gray-dark-blue
+
+.l-footer-content-text__wrapper
+  display: flex
+  flex-direction: column
+  gap: 12px
+  align-items: start
+
+.c-footer-two
+  @include flex-row
+  padding-top: 24px
+
+.designer
+  width: 154px
+
+.designer__text
+  @include text-14px-reg
+  text-align: center
+  color: $gray-dark-blue
+
+.footer-selection
+  @include flex-row
+  width: 178px
+  padding-right: 17px
+
+.language
+  @include flex-row
+
+.flag__img
+  width: 18px
+  height: 14px
+  margin-right: 8px
+
+.language-text
+  font-size: 14px
+  font-style: normal
+  font-weight: 600
+  line-height: 24px
+
+.footer-button
+  padding: 0
+  background: none
+  cursor: pointer
+  &__text::after
+    @extend %icons-18px
+    content: ""
+    position: absolute
+    background-image: url("/images/chevron-down.svg")
+    margin-left: 1px
+
+.footer-footer-two,
+.footer-footer-second
+  display: none
+
+@media (max-width: 1050px)
+  .footer-footer-second,
+  .footer-content__second
+    display: none
+  .footer-footer-two
+    display: block
+    @include flex-row
+  .chevron
+    padding: 0
+    background: none
+    cursor: pointer
+  .footer-footer-two
+    display: flex
+    flex-direction: column
+    align-items: center
+  .footer-content__col-one
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid $gray-light-over
+  .content__col-text
+    padding-bottom: 10px
+  .social-container
+    margin-right: 24px
+  .footer-one
+    ul
+      width: 100%
+      padding-right: 36px
+      li
+        margin: 0
+  .footer-content__text
+    padding-right: 24px
+  footer
+    padding-top: 48px
+
+@media (max-width: 840px)
+  footer
+    display: none
+    background: $white
+    padding-top: 0
+  .footer-footer-second
+    display: block
+  .footer-one
+    display: flex
+    flex-direction: column
+    border: none
+    padding-bottom: 12px
+  .footer-content__second
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 32px
+  .footer-content__col-one
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid $gray-light-over
+  .footer-selection
+    display: flex
+    justify-content: center
+    gap: 40px
+    padding: 32px 18px 32px 0
+    width: 100%
+  .social
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-evenly
+    padding: 0 100px 0 124px
+  .footer-content__first
+    width: 100%
+    display: flex
+  .c-footer-two
+    display: flex
+    justify-content: center
+
+@media (max-width: 690px)
+  footer
+    display: none
+  .footer-footer-second
+    background: $white
+    padding: 0 16px 24px
+  .c-footer-two
+    padding-top: 16px
+  .social
+    margin: 0
+
+@media (max-width: 550px)
+  .social
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-evenly
+    padding: 0 50px 0 74px
+  .footer-selection
+    padding-left: 18px

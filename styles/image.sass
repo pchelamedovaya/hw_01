@@ -1,0 +1,70 @@
+@import "base.sass"
+.image
+  max-width: 1440px
+  //height: 598px
+  display: flex
+  height: auto
+  width: 100%
+  background: $white
+  padding: 26px 52px 52px
+
+.text-title_image
+  @include text-heading
+  color: $white
+  padding-bottom: 13px
+
+.text-subtitle_image
+  @include text-18px-reg
+  color: $white
+  text-align: center
+  padding-bottom: 24px
+
+.image-wrapper
+  @include flex-row
+  display: flex
+  width: 100%
+  justify-content: center
+  //width: 1336px
+  //height: 494px
+  padding: 158px 428px 99px 428px
+  background: url(/images/img-sixth.jpg) no-repeat center
+
+.image__link-text
+  @include text-button-m
+  color: $white
+  //width: 96px
+  height: 32px
+  border-bottom: 1px solid $white
+
+.link-text
+  margin: 0
+  border: none
+  width: 100%
+  display: flex
+  justify-content: center
+
+@media (max-width: 1295px)
+  .image
+    padding-top: 0
+
+@media (max-width: 990px)
+  .image-wrapper
+    padding-left: 200px
+    padding-right: 200px
+
+@media (max-width: 690px)
+  .image
+    padding-left: 16px
+    padding-right: 16px
+  .image-wrapper
+    background: url(/images/img-sixth-two.jpg) no-repeat center
+    background-size: cover
+
+@media (max-width: 475px)
+  .image
+    display: flex
+    width: 100%
+  .image-wrapper
+    background: url(/images/img-sixth-two.jpg) no-repeat center
+    background-size: 376px 408px
+    padding: 100px 24px 60px 24px

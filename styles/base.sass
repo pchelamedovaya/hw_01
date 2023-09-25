@@ -1,0 +1,132 @@
+$white: #FFFFFF
+$gray-light-bg: #EFEFEF
+$gray-dark: #282828
+$gray-light: #9D9FA1
+$gray-light-over: #D0D5DD
+$gray-dark-blue: #5F6980
+$gray-text: #475467
+$shadow: #f0f0f0
+*
+  box-sizing: border-box
+  font-feature-settings: 'clig' off, 'liga' off
+  font-family: 'Inter', sans-serif
+  color: $gray-dark
+  line-height: 0
+
+body
+  background: $gray-light-bg
+  //display: flex
+  //align-items: center
+  //flex-direction: column
+
+ul
+  list-style-type: none
+
+a
+  text-decoration: none
+  color: inherit
+
+p, h2, h3
+  margin: 0
+
+button
+  border: none
+
+img
+  max-width: 100%
+
+@mixin flex-row
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+@mixin text-16px-sb
+  font-size: 16px
+  font-style: normal
+  font-weight: 600
+  line-height: 26px
+
+@mixin text-14px-sb
+  font-size: 14px
+  font-style: normal
+  font-weight: 600
+  line-height: 26px
+
+@mixin text-button-xs
+  font-size: 14px
+  font-style: normal
+  font-weight: 600
+  line-height: 24px
+
+@mixin text-button-s
+  font-size: 16px
+  font-style: normal
+  font-weight: 600
+  line-height: 28px
+
+@mixin text-button-m
+  font-size: 18px
+  font-style: normal
+  font-weight: 600
+  line-height: 32px
+  letter-spacing: -0.4px
+
+@mixin text-18px-reg
+  font-size: 18px
+  font-style: normal
+  font-weight: 400
+  line-height: 30px
+
+@mixin text-16px-reg
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: 26px
+
+@mixin text-14px-reg
+  font-size: 14px
+  font-style: normal
+  font-weight: 400
+  line-height: 22px
+
+@mixin text-heading
+  text-align: center
+  font-size: 42px
+  font-style: normal
+  font-weight: 600
+  line-height: 54px
+  letter-spacing: -0.4px
+
+@mixin buttons-l-r
+  background: $white
+  border-radius: 50%
+  padding: 9px
+  line-height: 0
+  box-shadow: 0 1px 10px 0 $shadow
+  cursor: pointer
+
+@mixin container-buttons-l-r
+  @include flex-row
+  width: 1336px
+  height: 46px
+  position: absolute
+  button
+    @include buttons-l-r
+
+@mixin menu-brg-span
+  display: flex
+  flex-direction: column
+  border: 2px solid $gray-dark
+  border-radius: 2px
+  width: 25px
+
+%icons-28px
+  width: 28px
+  height: 28px
+
+%icons-18px
+  width: 18px
+  height: 18px
+
+

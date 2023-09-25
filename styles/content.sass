@@ -1,0 +1,230 @@
+@import "base.sass"
+.content
+  max-width: 1440px
+  //height: 700px
+  position: relative
+  padding: 0
+
+.content-wrapper
+  @include flex-row
+  padding: 0
+
+.img-first
+  width: 736px
+  height: 700px
+  object-fit: cover
+
+.text-four
+  width: 121px
+
+.text-group
+  padding: 207px 134px 207px 82px
+  div
+    width: 488px
+
+.sub-title
+  @include text-16px-sb
+  padding-bottom: 8px
+
+.sub-title-light
+  @include text-18px-reg
+  padding-bottom: 28px
+
+.title
+  font-size: 54px
+  font-style: normal
+  font-weight: 600
+  line-height: 62px
+  letter-spacing: -1px
+  padding-bottom: 8px
+
+.text__link
+  display: flex
+  justify-content: start
+  border-bottom: 1px solid $gray-dark
+  width: 121px
+
+.link-text
+  font-size: 18px
+  font-style: normal
+  font-weight: 600
+  line-height: 32px
+  letter-spacing: -0.4px
+
+.buttons-container-content
+  @include container-buttons-l-r
+  z-index: 1
+  margin-left: 52px
+  margin-right: 52px
+  bottom: 304px
+
+.img__btn
+  @extend %icons-28px
+
+.sub-title-light-two
+  display: none
+
+@media (max-width: 1460px)
+  .sub-title-light-two
+    display: none
+  .content-wrapper
+    @include flex-row
+  .text-group
+    div
+      width: 100%
+  .buttons-container-content
+    @include flex-row
+    height: 46px
+    position: absolute
+    margin: 0
+    padding-left: 52px
+    padding-right: 52px
+    width: 100%
+    button
+      @include buttons-l-r
+  .button-right
+    align-content: end
+
+@media (max-width: 1360px)
+  .img-first
+    height: 673px
+    width: 637px
+    object-fit: cover
+  .sub-title-light-two
+    display: none
+  .title
+    font-size: 46px
+    font-style: normal
+    font-weight: 600
+    line-height: 52px
+    letter-spacing: -1px
+    padding-bottom: 8px
+  .sub-title-light
+    @include text-16px-reg
+    padding-bottom: 28px
+
+@media (max-width: 1282px)
+  .title
+    @include flex-row
+    font-size: 36px
+    font-style: normal
+    font-weight: 600
+    line-height: 44px
+    letter-spacing: -1px
+    padding-bottom: 8px
+    padding-left: 35px
+  .text-group
+    padding: 24px 40px 24px 16px
+  .sub-title-light
+    display: none
+  .sub-title-light-two
+    @include text-16px-reg
+    display: block
+    padding-bottom: 28px
+    padding-left: 35px
+  .sub-title
+    padding-left: 35px
+  .link-text
+    margin-left: 35px
+    width: 121px
+    font-size: 18px
+    font-style: normal
+    font-weight: 600
+    line-height: 32px
+    letter-spacing: -0.4px
+    border-bottom: 1px solid $gray-dark
+
+@media (max-width: 1280px)
+  .text__link
+    margin-left: 35px
+  .img-first
+    width: 536px
+    height: 500px
+    object-fit: cover
+  .text-group
+    padding: 0 140px 103px 15px
+  .content-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+
+@media (max-width: 1263px)
+  .title
+    font-size: 36px
+    font-style: normal
+    font-weight: 600
+    line-height: 34px
+    letter-spacing: -0.6px
+  .text-group
+    padding: 0 140px 103px 15px
+
+@media (max-width: 1111px)
+  .text__link
+    margin: 0
+  .content
+    //background: $white
+  .text-group
+    padding: 103px 150px 103px 40px
+  .title
+    padding: 0 0 8px 0
+  .sub-title-light-two
+    display: none
+  .sub-title-light
+    display: block
+  .sub-title
+    padding: 0 0 8px 0
+  .link-text
+    margin: 0
+  .text-group
+    padding: 24px 16px 24px 16px
+  .content-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  .img-first
+    width: 661px
+    height: 625px
+  .buttons-container-content
+    @include flex-row
+    height: 46px
+    position: absolute
+    top: 280px
+    button
+      @include buttons-l-r
+
+@media (max-width: 1000px)
+  .img-first
+    width: 500px
+    height: 464px
+  .buttons-container-content
+    display: none
+
+@media (max-width: 1020px)
+  .content
+    background: $white
+
+@media (max-width: 761px)
+  .title
+    font-size: 36px
+    font-style: normal
+    font-weight: 600
+    line-height: 34px
+    letter-spacing: -0.6px
+    display: block
+  .img-first
+    width: 500px
+    height: 464px
+    object-fit: cover
+  .buttons-container-content
+    display: none
+  .text-group
+    padding-left: 32px
+
+@media (max-width: 580px)
+  .title
+    display: block
+    font-size: 28px
+    font-style: normal
+    font-weight: 600
+    line-height: 34px
+    letter-spacing: -0.6px

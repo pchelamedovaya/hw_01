@@ -1,0 +1,228 @@
+@import "base.sass"
+.information
+  max-width: 1440px
+  //height: 704px
+  padding: 52px
+  width: 100%
+  display: flex
+
+.information-wrapper
+  @include flex-row
+  width: 1336px
+  //height: 600px
+  padding: 0
+
+.img-information
+  width: 684px
+  height: 600px
+
+.information__text-group
+  padding: 75px 135px 144px 114px
+
+.information__text-one
+  @include text-16px-sb
+  color: $gray-dark
+  padding-bottom: 8px
+
+.information__text-two
+  font-size: 54px
+  font-style: normal
+  font-weight: 600
+  line-height: 62px
+  letter-spacing: -1px
+  color: $gray-dark
+  padding-bottom: 8px
+
+.information__text-three
+  @include text-18px-reg
+  color: $gray-dark
+  padding-bottom: 24px
+
+.information__text-four
+  font-size: 34px
+  font-style: normal
+  font-weight: 600
+  line-height: 40px
+  letter-spacing: -0.4px
+  color: $gray-dark
+  padding-bottom: 32px
+
+.button-information
+  padding: 10px 24px
+  width: 134px
+  height: 52px
+  background-color: $gray-dark
+  cursor: pointer
+  &-text
+    @include text-button-m
+    color: $white
+    text-align: center
+
+@media (max-width: 1390px)
+  .img-information
+    width: 584px
+    height: 500px
+  .information__text-group
+    padding: 75px 135px 75px 114px
+  .information__text-four
+    font-size: 28px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+    color: $gray-dark
+    padding-bottom: 32px
+
+@media (max-width: 1215px)
+  .img-information
+    width: 584px
+    height: 500px
+  .information__text-group
+    padding: 75px 135px 75px 114px
+  .information__text-four
+    font-size: 24px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+    color: $gray-dark
+    padding-bottom: 32px
+
+@media (max-width: 1175px)
+  .img-information
+    width: 584px
+    height: 500px
+  .information__text-group
+    padding: 75px 135px 75px 70px
+  .information__text-two
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+  .information__text-three
+    @include text-14px-reg
+
+@media (max-width: 1145px)
+  .img-information
+    width: 534px
+    height: 450px
+  .information__text-group
+    padding: 75px 135px 75px 70px
+  .information__text-two
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+  .information__text-three
+    @include text-14px-reg
+
+@media (max-width: 1100px)
+  .information__text-two
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+  .information__text-three
+    @include text-14px-reg
+  .information-wrapper
+    display: flex
+    justify-content: center
+  .information__text-group
+    padding: 0 90px 0 70px
+  .information__text-four
+    font-size: 20px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+    color: $gray-dark
+    padding-bottom: 32px
+
+@media (max-width: 1020px)
+  .information__text-two
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+  .information__text-three
+    @include text-14px-reg
+  .information
+    background: $white
+    padding-bottom: 0
+  .information-wrapper
+    display: flex
+    justify-content: center
+  .information__text-group
+    padding: 0 60px 0 50px
+  .information__text-four
+    font-size: 20px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+    color: $gray-dark
+    padding-bottom: 32px
+
+@media (max-width: 961px)
+  .information-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .information__text-group
+    padding-top: 16px
+  .information__text-four
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+    color: $gray-dark
+    padding-bottom: 32px
+
+@media (max-width: 700px)
+  .img-information
+    width: 375px
+    height: 329px
+    object-fit: cover
+  .information__text-one
+    font-size: 12px
+    font-style: normal
+    font-weight: 600
+    line-height: 20px
+  .information__text-two
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+  .information__text-three
+    @include text-14px-reg
+  .information__text-four
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+  .information
+    padding-left: 0
+    padding-right: 0
+  .information__text-group
+    padding-right: 16px
+    padding-left: 16px
+
+@media (max-width: 385px)
+  .information__text-four
+    font-size: 32px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+  .information
+    padding-top: 0
+
+

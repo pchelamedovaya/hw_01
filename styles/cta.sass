@@ -1,0 +1,169 @@
+@import "base.sass"
+.CTA
+  max-width: 1440px
+  //height: 438px
+  padding: 52px
+  background: $white
+  display: flex
+  width: 100%
+
+.CTA-wrapper
+  width: 1336px
+  //height: 334px
+  padding: 87px 398px 79px 398px
+  border: 1px solid $gray-light-over
+  border-radius: 15px
+  h2
+    @include text-heading
+    padding-bottom: 8px
+  p
+    @include text-18px-reg
+    text-align: center
+    padding-bottom: 20px
+
+.CTA__content-email
+  @include flex-row
+  height: 52px
+  margin: 0
+  border-bottom: 1px solid $gray-light-over
+
+.img__email
+  width: 24px
+  height: 24px
+  margin-right: 8px
+  margin-top: 3px
+
+.input__email
+  width: 375px
+  margin-right: 8px
+  border: none
+  outline: none
+  &::placeholder
+    @include text-16px-reg
+    color: $gray-light-over
+
+.button__email
+  height: 28px
+  width: 54px
+  background-color: $white
+  padding: 0
+  cursor: pointer
+  &-text
+    @include text-button-s
+    letter-spacing: -0.4px
+
+.visually-hidden,
+.CTA-wrapper-two
+  display: none
+
+@media (max-width: 1415px)
+  .CTA-wrapper
+    padding: 87px 350px 79px 350px
+  .CTA-wrapper-two
+    display: none
+
+@media (max-width: 1320px)
+  .CTA-wrapper
+    padding: 87px 300px 79px 300px
+  .CTA-wrapper-two
+    display: none
+
+@media (max-width: 1220px)
+  .CTA-wrapper
+    padding: 87px 250px 79px 250px
+  .CTA-wrapper-two
+    display: none
+
+@media (max-width: 1120px)
+  .CTA-wrapper
+    padding: 87px 200px 79px 200px
+  .CTA-wrapper-two
+    display: none
+
+@media (max-width: 1020px)
+  .CTA-wrapper
+    padding: 87px 150px 79px 150px
+  .CTA-wrapper-two
+    display: none
+
+@media (max-width: 918px)
+  .CTA
+    padding-bottom: 32px
+  .CTA-wrapper-two
+    display: none
+  .CTA-wrapper
+    padding: 87px 100px 79px 100px
+
+@media (max-width: 825px)
+  .CTA-wrapper-two
+    border: 1px solid $gray-light-over
+    display: block
+    padding: 115px 50px 115px 50px
+    border-radius: 15px
+    h2
+      @include text-heading
+      padding-bottom: 8px
+    p
+      @include text-18px-reg
+      text-align: center
+      padding-bottom: 20px
+  .CTA-wrapper
+    display: none
+  .CTA
+    display: flex
+    justify-content: center
+  .l-button__email
+    margin-top: 24px
+    display: flex
+    justify-content: center
+    padding: 8px 20px
+    background-color: $gray-dark
+    cursor: pointer
+    border-radius: 6px
+  .button__email
+    background-color: $gray-dark
+    &-text
+      font-size: 14px
+      font-style: normal
+      font-weight: 600
+      line-height: 24px
+      color: $white
+      text-align: center
+
+@media (max-width: 825px)
+  .CTA-wrapper
+    display: none
+  .CTA-wrapper-two
+    padding: 115px 25px 115px 25px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+  .CTA-wrapper-two-textOne
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+  .CTA-wrapper-two-textTwo
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: 22px
+  .l-img__email
+    min-width: 24px
+    margin-right: 8px
+
+@media (max-width: 735px)
+  .CTA
+    padding-bottom: 24px
+
+@media (max-width: 690px)
+  .CTA
+    padding: 16px
+  .CTA-wrapper-two
+    padding: 115px 16px 115px 16px
+
+@media (max-width: 485px)
+  .input__email
+    width: 100%
